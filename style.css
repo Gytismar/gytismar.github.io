@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    width: 1600px;
+    max-width: 80%;
+    max-height: 60%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 0px 1px;
+    padding: 10px;
+    border-color: black;
+    position: relative
+}
+
+.buttonGrid{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin: 30px 0;
+    gap: 15px;
+}
+
+.button{
+    border-color:lightgrey;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.button:hover{
+    border-color: black;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.startButton{
+    font-size: 2rem;
+    padding: 10px 10px;
+    margin: 30px;
+}
+
+.question{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: solid black 1px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.removeBorder{
+    border: solid white 0px;
+}
+
+.refreshButton{
+    font-size: 1.5rem;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+
+
+.page{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
