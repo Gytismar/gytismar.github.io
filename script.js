@@ -59,11 +59,7 @@ function addCorect(){
 
 function selectAnswer(e){
     if(e.target.innerText == randomQuestions[currentIndex].correct_answer){
-        console.log("Correct")
         correctAmount = correctAmount+1
-    }
-    else{
-        console.log("Incorrect")
     }
 
     if (currentIndex+1 != questionAmount){
